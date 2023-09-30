@@ -49,7 +49,7 @@ let handleUserJoined = async (user, mediaType) => {
 
         document.getElementById("video-streams").addEventListener("click", joinStream)
 
-        user.videoTrack.play()
+        user.videoTrack.play(`user-${user.uid}`)
     }
     
     if(mediaType === 'audio'){
