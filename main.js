@@ -27,4 +27,8 @@ let joinAndDisplayLocalStream = async () => {
 let joinStream = async () => {
     await joinAndDisplayLocalStream()
     document.getElementById('join-btn').style.display = 'none'
+    document.getElementById('stream-controls').style.display = 'flex'
+
 }
+
+document.getElementById('join-btn').addEventListener('click', joinStream)
