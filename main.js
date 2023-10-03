@@ -21,8 +21,7 @@ let joinAndDisplayLocalStream = async () => {
                   </div>`
 
     let playerChild = document.getElementById(`user-${UID}`)
-    var realChild = playerChild.firstChild
-    print(realChild)
+    print(playerChild)
                   
     document.getElementById('video-streams').insertAdjacentHTML('beforeend', player)
 
