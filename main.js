@@ -96,7 +96,7 @@ let toggleCamera = async (e) => {
         e.target.style.backgroundColor = 'cadetblue'
     } else {
         await localTracks[1].setMuted(true)
-        e.target.innerText = 'Mic on'
+        e.target.innerText = 'Camera Off'
         e.target.backgroundColor = '#EE4B2B'
     }
 }
