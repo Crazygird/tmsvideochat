@@ -79,4 +79,4 @@ let leaveAndRemoveLocalStream = async () => {
 
 
 document.getElementById('join-btn').addEventListener('click', joinStream)
-document.getElementById('leave-btn').addEventListener('click', joinStream)
+document.getElementById('leave-btn').addEventListener('click', leaveAndRemoveLocalStream)
