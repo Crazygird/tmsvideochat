@@ -6,6 +6,7 @@
 }
 
 .video-container{
+    padding-top: 5px;
     padding: 5px;
     height: 100%;
 }
