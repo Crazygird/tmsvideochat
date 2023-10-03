@@ -20,7 +20,10 @@ let joinAndDisplayLocalStream = async () => {
                         <div class="video-player" id="user-${UID}"></div>
                   </div>`
 
-                
+    let playerChild = document.getElementById(`user-${UID}`)
+    var realChild = playerChild.firstChild
+    print(realChild)
+                  
     document.getElementById('video-streams').insertAdjacentHTML('beforeend', player)
 
     localTracks[1].play(`user-${UID}`)
