@@ -89,6 +89,18 @@ let toggleMic = async (e) => {
   }
 }
 
+let toggleCamera = async (e) => {
+    if (localTracks[1].muted){
+        await localTracks[1].setMuted(false)
+        e.target.innerText = 'Camera On'
+        e.target.style.backgroundColor = 'cadetblue'
+    } else {
+        await localTracks[1].setMuted(true)
+        e.target.innerText = 'Mic on'
+        e.target.backgroundColor = '#EE4B2B'
+    }
+}
+
 document.getElementById('join-btn').addEventListener('click', joinStream)
 document.getElementById('leave-btn').addEventListener('click', leaveAndRemoveLocalStream)
 document.getElementById('mic-btn').addEventListener('click', toggleMic)
