@@ -1,7 +1,7 @@
 #video-streams{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(500px, 1fr)); 
-    height: 90vh;
+    height: 720px;
     width: 1400px;
 }
 
