@@ -6,6 +6,8 @@
 }
 
 .video-container{
+    border-radius: 3px;
+    padding: 5px;
     height: 100%;
     border: 2px solid black;
 }
