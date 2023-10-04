@@ -19,7 +19,7 @@ let joinAndDisplayLocalStream = async () => {
     let player = `<div class="video-container" id="user-container-${UID}"> 
                         <div class="video-player" id="user-${UID}"></div>
                   </div>`
-
+    print(APP_ID, TOKEN, client, UID)
                   
     document.getElementById('video-streams').insertAdjacentHTML('beforeend', player)
 
