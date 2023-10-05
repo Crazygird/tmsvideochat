@@ -1,5 +1,5 @@
 const APP_ID = "50f02150c5a546eb91fefc84e59c4d31"
-const TOKEN = "007eJxTYLCrDStZzbf1bvfFuNrp7POn/ppYoHloktmzmdtCpvFFvMtXYDA1SDMwMjQ1SDZNNDUxS02yNExLTUu2MEk1tUw2STE2/HRGNrUhkJHB7EIHIyMDBIL4LAy5iZl5DAwAjxIgiA=="
+const TOKEN = "007eJxTYJjpoZR1UlL4jM2ENeI8+wwzTrXPkGuxcEkrepIWmOPVqKzAYGqQZmBkaGqQbJpoamKWmmRpmJaalmxhkmpqmWySYmyopyyf2hDIyNC4oJOBEQpBfBaG3MTMPAYGAEyTG8M="
 const CHANNEL = "main"
 
 const client = AgoraRTC.createClient({mode: 'rtc', codec: 'vp8'})
@@ -108,9 +108,4 @@ document.getElementById('leave-btn').addEventListener('click', leaveAndRemoveLoc
 document.getElementById('mic-btn').addEventListener('click', toggleMic)
 document.getElementById('camera-btn').addEventListener('click', toggleCamera)
 
-const parentDiv = document.getElementById('stream-wrapper');
-const children = parentDiv.children;
-console.log(children)
-for (let i = 0; i < children.length; i++) {
-  console.log(children[i]);
-}
+ 
