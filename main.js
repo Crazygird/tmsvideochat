@@ -9,6 +9,7 @@ let remoteUsers = {}
 
 let joinAndDisplayLocalStream = async () => {
 
+
     client.on('user-published', handleUserJoined)
     client.on('user-left', handleUserLeft)
 
@@ -24,6 +25,9 @@ let joinAndDisplayLocalStream = async () => {
     localTracks[1].play(`user-${UID}`)
 
     await client.publish([localTracks[0], localTracks[1]])
+
+    var localContainer = document.getElementById(`user-continainer-${UID}`)
+    console.log(localContainer)
 }
 
 let joinStream = async () => {
@@ -37,6 +41,7 @@ let joinStream = async () => {
 let handleUserJoined = async (user, mediaType) => {
     remoteUsers[user.uid] = user
     await client.subscribe(user, mediaType)
+    
 
     if (mediaType === 'video'){
         let player = document.getElementById(`user-container-${user.uid}`)
@@ -102,3 +107,4 @@ document.getElementById('join-btn').addEventListener('click', joinStream)
 document.getElementById('leave-btn').addEventListener('click', leaveAndRemoveLocalStream)
 document.getElementById('mic-btn').addEventListener('click', toggleMic)
 document.getElementById('camera-btn').addEventListener('click', toggleCamera)
+
