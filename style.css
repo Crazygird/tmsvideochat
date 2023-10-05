@@ -3,6 +3,7 @@ body {
 }
 
 .glass{
+    color: #796565;
     background: rgba(255, 255, 255, 0.2); 
     border-radius: 6px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -16,9 +17,8 @@ body {
     left: 50%;
     margin-top: -50px;
     margin-left: -100px;
-    font-size: 18px;
-    padding: 20px 40px;
-    size: 40px;
+    font-size: 24px;
+    padding: 30px 50px;
 }
 
 #video-streams{
