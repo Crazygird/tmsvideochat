@@ -99,7 +99,7 @@ let toggleCamera = async (e) => {
         e.target.backgroundColor = '#EE4B2B'
     }
 }
-
+joinStream()
 document.getElementById('join-btn').addEventListener('click', joinStream)
 document.getElementById('leave-btn').addEventListener('click', leaveAndRemoveLocalStream)
 document.getElementById('mic-btn').addEventListener('click', toggleMic)
