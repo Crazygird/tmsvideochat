@@ -3,7 +3,6 @@ const TOKEN = "007eJxTYLCrDStZzbf1bvfFuNrp7POn/ppYoHloktmzmdtCpvFFvMtXYDA1SDMwMj
 const CHANNEL = "main"
 
 const client = AgoraRTC.createClient({mode: 'rtc', codec: 'vp8'})
-print(client)
 
 let localTracks = []
 let remoteUsers = {}
