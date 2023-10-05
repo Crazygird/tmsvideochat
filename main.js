@@ -108,4 +108,9 @@ document.getElementById('leave-btn').addEventListener('click', leaveAndRemoveLoc
 document.getElementById('mic-btn').addEventListener('click', toggleMic)
 document.getElementById('camera-btn').addEventListener('click', toggleCamera)
 
- 
+const parentDiv = document.getElementById('stream-wrapper');
+const children = parentDiv.children;
+console.log(children)
+for (let i = 0; i < children.length; i++) {
+  console.log(children[i]);
+}   
