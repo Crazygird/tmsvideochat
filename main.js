@@ -113,4 +113,4 @@ const children = parentDiv.children;
 console.log(children)
 for (let i = 0; i < children.length; i++) {
   console.log(children[i]);
-}   
+}
